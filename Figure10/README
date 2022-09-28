@@ -1,0 +1,24 @@
+README
+
+These files plot the continuation curve of the positive fixed points that emerge from fold bifurcation in the May-Leonard system with mutations. The plot also includes information about the stability of these points.
+
+List of files:
+
+1. Alpha2.csv 
+
+This file list the components of the positive fixed point that emerges from the fold bifurcation vs the parameter alpha. This file was created using AUTO. Script for creating file can be found in folder: Figure9/mlm_eq_RegionB. 
+
+2. Jacobian.m
+
+This M-file contains the Derivative map for the May-Leonard System. It is written as a MATLAB function. Inputs are the coordinates for fixed point, alpha, beta, and mu. Output is the Jacobian evaluated at said fixed point.
+
+3. StabilityRegionB.m
+
+This file contains the MATLAB script for plotting the m1-component of the positive fixed points that emerge from fold bifurcation vs parameter alpha. It uses file Alpha2.csv to plot this curve. The script also uses Jacobian.m to determine the stability of these fixed points. It plots the continuation curve and distinguishes on the plot stable fixed points from those that are unstable.
+
+
+
+
+
+
+
