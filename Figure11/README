@@ -1,0 +1,25 @@
+README
+
+These files plot a trajectory of the perturbed May-Leonard system for parameter values that are inside Region B of the stability diagram and that are also near the locus of fold bifurcations.
+
+List of files:
+
+
+1. mayleonard.m
+
+This is an M-file containing the vector field corresponding to the perturbed May-Leonard system as well as its derivative map. The file is written as a MATLAB function. Inputs are the coordinates of a fixed point, alpha, beta, and mu. Outputs are the vector field and derivative map evaluated at said fixed point with given parameter values.
+
+2. mayloenardode.m
+
+This is an M-file containing the vector field corresponding to the perturbed May-Leonard system. It is written as a MATLAB function. Inputs are the (dummy) time, coordinates of a point, alpha, beta, and mu. Output is the vector field evaluated at said point with given parameter values.
+
+3. FindingRoots.m
+
+This is an M-file containing script for plotting trajectory of perturbed May-Leonard in the m1-m2 plane, as well as the m1-component vs time. 
+
+
+
+
+
+
+
