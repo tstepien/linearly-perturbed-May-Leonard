@@ -1,0 +1,34 @@
+README FILE
+
+These files compute locus of fold bifurcation in the mu-alpha plane for the May-Leonard with mutations. We find 3 curves of folds: Bottom, top-left, top-right. Value of beta = 1.5 
+
+List of files:
+
+1. mlm.f90
+
+This file contains the equations, initial parameter values, and initial fixed point from which to start the continuation. Initial fixed point was found using MATLAB fsolve.
+
+
+
+2. c.mlm.3
+
+This file contains the parameters fed to AUTO to carry out the continuation, including arc-length step size.
+
+
+3. mlm.auto
+
+This file carries out the routines to compute the locus of fold bifurcations.
+
+
+Output: 3 CSV files which list the parameter values alpha mu that correspond to locus of folds for fixed value of beta = 1.5.
+ 
+
+Output Files:
+
+1. Foldmu_beta_1_5_R.csv
+
+2. Foldmu_beta_1_5_TL.csv
+
+3. Foldmu_beta_1_5_TR.csv
+
+

@@ -1,0 +1,100 @@
+#=============
+# AUTO May-Leonard with mutations mlm
+#=============
+import numpy as np
+
+#======
+# For constructing bottom fold curve in alpha-mu plane
+#======
+
+
+# Vary mu, fix alpha and beta
+
+start = run(e='mlm', c='mlm.3', UZR={3: 0.28})
+start = start + run( e='mlm', DS='-', UZR={3: 0.28})
+
+
+# This follows one of the folds, constructinig bottom right curve in 
+# alpha-mu plane
+
+lp1 = load(start('LP1'), ISW =2, ICP =[3, 2], UZR={-2:[0]})
+fold1 = run(lp1)
+fold1 = fold1 + run(lp1, DS='-')
+
+# For storing data
+
+fold11 = merge(fold1)
+a = np.array(fold11['PAR(2)'])
+mu = np.array(fold11['PAR(3)'])
+x = np.array(fold11['U(1)'])
+y = np.array(fold11['U(2)'])
+z = np.array(fold11['U(3)'])
+
+C = np.transpose(np.array([a,mu,x,y,z]))
+np.savetxt("../Data/Foldmu_beta_1_5_R.csv",C, delimiter=",")
+
+#======
+# For constructing top-left fold curve in alpha-mu plane
+#======
+
+# Vary alpha, fix mu and beta
+
+start2 = run(e='mlm', c='mlm.3', ICP=[2], UZR={-2: 0})
+start2 = start2 + run( e='mlm', DS='-', ICP=[2], UZR={-2: 0})
+
+
+# This follows one of the folds, constructinig top-left curve in 
+# alpha-mu plane
+
+lp1 = load(start2('LP1'), ISW =2, ICP =[3, 2], UZR={-2:[0 ,5]})
+fold1 = run(lp1)
+fold1 = fold1 + run(lp1, DS='-')
+
+
+# For storing data
+
+fold11 = merge(fold1)
+a = np.array(fold11['PAR(2)'])
+mu = np.array(fold11['PAR(3)'])
+x = np.array(fold11['U(1)'])
+y = np.array(fold11['U(2)'])
+z = np.array(fold11['U(3)'])
+
+C = np.transpose(np.array([a,mu,x,y,z]))
+np.savetxt("../Data/Foldmu_beta_1_5_TL.csv",C, delimiter=",")
+
+#======
+# For constructing top-right fold curve in alpha-mu plane
+#======
+
+uz1 = load(start('UZ2'), ICP=[2], UZR={-2: [0, 5]})
+curv1 = run(uz1)
+curv1 = curv1 + run( uz1, DS='-')
+
+# This follows one of the folds, constructinig top-right curve in 
+# alpha-mu plane
+
+lp1 = load(curv1('LP1'), ISW =2, ICP =[3, 2], UZR={-2:[0, 5]})
+fold1 = run(lp1)
+fold1 = fold1 + run(lp1, DS='-')
+
+
+# For storing data
+
+fold11 = merge(fold1)
+a = np.array(fold11['PAR(2)'])
+mu = np.array(fold11['PAR(3)'])
+x = np.array(fold11['U(1)'])
+y = np.array(fold11['U(2)'])
+z = np.array(fold11['U(3)'])
+
+C = np.transpose(np.array([a,mu,x,y,z]))
+np.savetxt("../Data/Foldmu_beta_1_5_TR.csv",C, delimiter=",")
+
+
+
+
+
+
+
+cl()

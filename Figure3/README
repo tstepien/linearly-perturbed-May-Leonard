@@ -1,0 +1,28 @@
+README
+
+These files plot the locus of folds in the mu-alpha plane for the perturbed May-Leonard system. We do this for two values of beta, beta=0.5 and beta=1.5.
+
+List of files:
+
+
+1. Foldmu2.m
+
+This file contains the MATLAB script for plotting locus of folds. It uses the files from folder Data to plot the this curve.
+
+
+List of Folders:
+
+1. mlm_mu_fold_beta_1_5
+
+This folder contains files and AUTO07 routines for creating some of the data-files listed in folder Data. The data files created with these scripts contain lists of parameter values, alpha and mu, that correspond to a fold bifurcation when beta = 1.5.
+
+
+2. mlm_mu_fold_beta_0_5
+
+This folder contains files and AUTO07 routines for creating some of the data-files listed in folder Data. The data files created with these scripts contain lists of parameter values, alpha and mu, that correspond to a fold bifurcation when beta = 0.5.
+
+
+
+3. Data
+
+This folder contains files with the list of parameter values, alpha and mu, that correspond to locus of fold bifurcations.
