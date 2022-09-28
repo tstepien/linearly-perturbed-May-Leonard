@@ -1,0 +1,33 @@
+README
+
+These files plot simulations of the cylindrical coordinates system for the May-Leonard system with mutations.
+
+List of files:
+
+---------------------------------------
+Programs
+---------------------------------------
+
+1. solve_fixedpt_muperturb_zero.m
+
+Run this file to simulate the system with mu = mu_c = 0.0067.
+
+2. solve_fixedpt_muperturb_medium.m
+
+Run this file to simulate the system with mu = mu_c + 0.003 = 0.0697.
+
+3. solve_fixedpt_muperturb_large.m
+
+Run this file to simulate the system with mu = mu_c + 0.005 = 0.0717.
+
+---------------------------------------
+Files Needed to Run the Programs
+---------------------------------------
+
+1. MLcylindricalperturb.m
+
+This file contains the right hand side of the ordinary differential equation to be solved.
+
+2. plots_same_axes.m
+
+This file plots the simulations.
