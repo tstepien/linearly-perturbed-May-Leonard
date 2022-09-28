@@ -1,0 +1,21 @@
+README
+
+These files plot solutions of the perturbed May-Leonard system for parameter values that are on Region C' (the Hopf bifurcation line) of the stability diagram.
+ 
+List of files:
+
+1. derivMLmu.m
+
+This is an M-function representing the linearly-perturbed May-Leonard system, that is May-Leonard with the mu term.
+
+2. MLmu.m
+
+This is an M-file that runs a MATLAB differential equation solver (ode45) using the derivML function, then plots the solution. For parameters, alpha is chosen first then beta is calculated using the line equation.
+
+
+
+
+
+
+
+
