@@ -1,0 +1,21 @@
+README
+
+This folder contains files for computing continuation curve for equilibria that bifurcate from fold. Parameters beta and mu are fixed, while alpha is varied. Output helps us plot m1-component of fixed point vs alpha parameter.
+
+List of files:
+
+1. mlm.f90
+
+This file contains the equations, initial parameter values, and initial fixed point from which to start continuation. Initial fixed point was found using MATLAB fsolve.
+
+2. c.mlm.3
+
+This file contains the parameters fed to AUTO to carry out the continuation, including arc-length step size.
+
+3. eq.auto
+
+This file carries out the routines to compute the continuation curve for fixed beta, mu, and varying alpha
+
+
+Output: CSV file 'Alpha2.csv' which lists the components of the fixed point vs alpha parameter.
+

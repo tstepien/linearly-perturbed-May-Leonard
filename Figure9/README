@@ -1,0 +1,34 @@
+README
+
+These files plot the continuation curve of the positive fixed points that emerge from fold bifurcation in the May-Leonard system with mutations. The plot also includes the second order approximations (done with respect to parameter mu) for these fixed points.
+
+List of files:
+
+1. Alpha2.csv 
+
+This file list the components of the positive fixed point that emerges from the fold bifurcation vs the parameter alpha. This file was created using AUTO. Script for creating file can be found in folder: mlm_eq_RegionB. 
+
+2. Expansions.m
+
+This M-file contains the second order approximations, on the parameter mu, for the single-population fixed point. This file is built as a Matlab function. Inputs are values of mu, alpha and beta, output is the value of the fixed point for these parameters.
+
+3. Expansion2Pop.m
+
+This M-file contains the second order approximations, on the parameter mu, for the double-population fixed point. This file is built as a Matlab function. Inputs are values of mu, alpha and beta, output is the value of the fixed point for these parameters.
+
+
+4. CompareRegionB.m
+
+This file contains the MATLAB script for plotting the the m1-component of the positive fixed points that emerge from fold bifurcation vs parameter alpha. It uses file Alpha2.csv to plot this curve. The script also uses Expansions.m and Expansion2Pop.m to plot the second order approximations for these fixed points. 
+
+
+
+List of folders:
+
+1. mlm_eq_Regionb
+
+This folder contains files and routines for creating Alpha2.csv file
+
+
+
+

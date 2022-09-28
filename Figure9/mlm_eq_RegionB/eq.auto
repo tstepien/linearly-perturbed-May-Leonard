@@ -1,0 +1,27 @@
+
+#=============
+# AUTO May-Leonard with mutations eq
+#=============
+import numpy as np
+
+
+print "\n***Generate starting data NEW***"
+alpha=run(e='mlm',c='mlm.3')
+alpha = alpha + run(e='mlm', DS='-')
+alpha2= merge(alpha)
+alpha2 =relabel(alpha2)
+save(alpha2, 'alpha')
+plot(alpha2)
+
+a1 = np.array(alpha2['U(1)'])
+a2 = np.array(alpha2['U(2)'])
+a3 = np.array( alpha2['U(3)'])
+alpar = np.array(alpha2['PAR(2)'])
+Al = np.transpose(np.array([alpar,a1,a2,a3]))
+np.savetxt("Alpha2.csv", Al, delimiter =",")
+
+
+
+
+
+cl()
