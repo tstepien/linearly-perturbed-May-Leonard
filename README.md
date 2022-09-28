@@ -6,7 +6,7 @@ The code contained in the linearly-perturbed-May-Leonard project was developed t
 >[Gabriela Jaramillo](https://github.com/gabyjaramillo), [Lidia Mrad](https://www.mtholyoke.edu/directory/faculty-staff/lidia-mrad), and [Tracy L. Stepien](https://github.com/tstepien/), Dynamics of a linearly-perturbed May–Leonard competition model, Submitted to the *Journal of Nonlinear Science*.
 
 ## Description of Folders
-Code to create each figure is contained in the folder with the same name. There is a README file within each folder that gives further description on how to recreate the figures with the given code.
+Code to create each figure is contained in the folder with the same name. There is a README file within each folder that provides further instructions on how to recreate the figures with the given code.
 
 ## Licensing
 Copyright 2020-2022 [Gabriela Jaramillo](https://github.com/gabyjaramillo), [Lidia Mrad](https://www.mtholyoke.edu/directory/faculty-staff/lidia-mrad), and [Tracy Stepien](https://github.com/tstepien/). This is free software made available under the MIT License. For details see the LICENSE file.
