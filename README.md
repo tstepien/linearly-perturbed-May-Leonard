@@ -9,4 +9,4 @@ The code contained in the linearly-perturbed-May-Leonard project was developed t
 Code to create each figure in the paper is contained in the folder with the same name. There is a README file within each folder that provides further instructions on how to recreate the figures with the given code.
 
 ## Licensing
-Copyright 2020-2022 [Gabriela Jaramillo](https://github.com/gabyjaramillo), [Lidia Mrad](https://www.mtholyoke.edu/directory/faculty-staff/lidia-mrad), and [Tracy Stepien](https://github.com/tstepien/). This is free software made available under the MIT License. For details see the LICENSE file.
+Copyright 2020-2022 [Gabriela Jaramillo](https://github.com/gabyjaramillo), [Lidia Mrad](https://www.mtholyoke.edu/directory/faculty-staff/lidia-mrad), and [Tracy Stepien](https://github.com/tstepien/). This is free software made available under the MIT License. For details see the [LICENSE](LICENSE) file.
