@@ -1,0 +1,21 @@
+README FILE
+
+These files compute the locus of fold bifurcation of the May-Leonard model with mutations in the alpha-beta plane. The set of points found correspond to the first half of the curve labeled 1) in Figure 4 of the paper. Steady states that emerge have at least one negative component. 
+
+List of files:
+
+1. mlm.f90
+
+This file contains the equations, initial parameter values, and initial fixed point from which to start continuation. Initial fixed point was found using MATLAB fsolve.
+
+2. c.mlm.3
+
+This file contains the parameters fed to AUTO to carry out the continuation, including arc-length step size.
+
+3. mlm.auto
+
+This file carries out the routines to compute the locus of fold bifurcations
+
+
+Output: CSV file 'Cusp2.csv' which lists the parameter values alpha beta that correspond to locus of folds.
+

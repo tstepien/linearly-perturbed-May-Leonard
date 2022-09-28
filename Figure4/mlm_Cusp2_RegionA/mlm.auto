@@ -1,0 +1,26 @@
+
+#=============
+# AUTO May-Leonard with mutations mlm
+#=============
+import numpy as np
+import matplotlib.pyplot as plt
+
+alpha = run(e='mlm', c ='mlm.3')
+plot(alpha)
+
+
+lp1 = load(alpha('LP1'), ISW =2 )
+cusp = run(lp1)
+cusp = cusp + run(lp1, DS='-')
+save(cusp,'cusp')
+p=plot(cusp)
+p.configure(bifurcation_y = ['PAR(2)'])
+cusp2 = merge(cusp)
+a = np.array(cusp2['PAR(2)'])
+b = np.array(cusp2['PAR(1)'])
+
+C = np.transpose(np.array([a,b]))
+np.savetxt("Cusp2.csv",C, delimiter=",")
+
+
+cl()

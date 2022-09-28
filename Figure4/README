@@ -1,0 +1,34 @@
+README
+
+These files plot the locus of fold and Hopf bifurcations of perturbed May-Leonard system.
+
+List of files:
+
+1. Cusp.csv 
+
+This file list parameter values alpha and beta that correspond to locus of fold bifurcations labeled as 2) in Figure 4 of paper. The fixed points that emerge from this fold have positive components. This file was created using AUTO. Script for creating file can be found in folder: Figure2/mlm_cusp_RegionB. 
+
+2. Cusp2.csv
+
+This file list parameter values alpha and beta that correspond to the first half of the locus of fold bifurcations that is labeled 1) in Figure 4 of paper. The fixed points that emerge from this fold have at least one negative component. This file was created using AUTO. Script for creating file can be found in folder: mlm_Cusp2_RegionA. 
+
+3. Cusp3.csv
+
+This file list parameter values alpha and beta that correspond to the second half of the locus of fold bifurcations labeled as 1) in Figure 4 of paper. The fixed points that emerge from this fold have one negative component. This file was created using AUTO. Script for creating file can be found in folder: mlm_Cusp3_RegionA. 
+
+
+4. Figure3.m
+
+This file contains the MATLAB script for plotting the locus of fold and Hopf bifurcations  It uses the files Cusp.csv, Cusp2.csv, and Cusp3.csv to plot the two curves representing the locus of fold bifurcations.
+
+List of folders:
+
+1. mlm_Cups2_RegionA
+
+This folder contains files and routines for creating Cusp2.csv file
+
+2. mlm_Cups3_RegionA
+
+This folder contains files and routines for creating Cusp3.csv file
+
+
