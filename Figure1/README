@@ -1,0 +1,11 @@
+README
+
+This file plots the stability plot for the May-Leonard system.
+
+List of files:
+
+1. Figure1.nb
+
+This file contains the Mathematica script for creating the stability diagram. 
+
+Run the first cell in the Mathematica file to obtain the plot in color. Run the second cell to obtain the plot in grayscale. Then run the remaining cells.
