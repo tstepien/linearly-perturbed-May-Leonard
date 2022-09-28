@@ -1,0 +1,29 @@
+README
+
+These files create the stability diagram for the linearly-perturbed May-Leonard system
+
+List of files:
+
+1. Cusp.csv 
+
+This file lists the parameter values alpha and beta that correspond to locus of fold bifurcations. This file was created using AUTO. Script for creating file can be found in folder: mlm_cusp_RegionB. 
+
+2. interpolate_cusp.m
+
+This file interpolates the data from the Cusp.csv and outputs the file Cusp_interp.mat.
+
+3. Cusp_interp.mat
+
+This file lists the interpolated parameter values alpha and beta that correspond to locus of fold bifurcations using the interpolate_cusp.m file.
+
+2. Figure2.nb
+
+This file contains the Mathematica script for creating the stability diagram. It uses the files Cusp.csv and Cusp_interp.mat to plot the locus of fold bifurcations.
+
+Run the first cell in the Mathematica file to obtain the plot in color. Run the second cell to obtain the plot in grayscale. Then run the remaining cells.
+
+List of folders:
+
+1. mlm_cups_RegionB
+
+This folder contains files and routines for creating Cusp.csv file

@@ -1,0 +1,39 @@
+
+#=============
+# AUTO May-Leonard with mutations mlm
+#=============
+import numpy as np
+
+
+
+print "\n***Compute fixed points by varying alpha fixed beta***"
+
+alpha = run(e='mlm', c='mlm.3')
+alpha = alpha + run(e='mlm', DS='-')
+
+
+print "\n***Relabel and save the output files***"
+
+alpha=rl(alpha)
+sv(alpha,'alpha')
+
+print "\n***Find locus of folds by continuing in the beta parameter***"
+
+lp1 = load(alpha('LP1'), ISW =2 )
+cusp = run(lp1)
+cusp = cusp + run(lp1, DS='-')
+save(cusp,'cusp')
+p=plot(cusp)
+
+# Store information in csv file
+
+p.configure(bifurcation_y = ['PAR(1)'])
+cusp2 = merge(cusp)
+a = np.array(cusp2['PAR(2)'])
+b = np.array(cusp2['PAR(1)'])
+
+C = np.transpose(np.array([a,b]))
+np.savetxt("Cusp.csv",C, delimiter=",")
+
+
+cl()
