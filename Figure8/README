@@ -1,0 +1,9 @@
+README
+
+This file plots the region in beta-mu space for which the fixed points in the cylindrical coordinates system are non-negative. It also contains analysis for Region C'.
+
+List of files:
+
+1. Figure8.nb
+
+Run the entire notebook to obtain plots and analysis.
