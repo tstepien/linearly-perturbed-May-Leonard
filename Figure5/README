@@ -1,0 +1,18 @@
+README
+
+This file plots the Hopf bifurcation line for several values of mu.
+ 
+List of files:
+
+1. StabilityCond.m
+
+This is an M-file that plots the line: beta = -alpha + (6mu+2)/(1-6mu) for several small mu values.
+
+
+
+
+
+
+
+
+
