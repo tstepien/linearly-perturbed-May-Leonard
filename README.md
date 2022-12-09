@@ -3,7 +3,7 @@
 <a href="https://github.com/tstepien/linearly-perturbed-May-Leonard/"><img src="https://img.shields.io/badge/GitHub-tstepien%2Flinearly--perturbed--May--Leonard-blue" /></a> <a href="https://doi.org/10.48550/arXiv.2210.04342"><img src="https://img.shields.io/badge/aRxiv-2210.04342-orange" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
 
 The code contained in the linearly-perturbed-May-Leonard project was developed to numerically simulate the May-Leonard three-species competition model with an added linear perturbation term that can be interpreted as a model for "global mutations," where each of the three species can mutate into the other two with the same constant rate. It is described in:
->[Gabriela Jaramillo](https://github.com/gabyjaramillo), [Lidia Mrad](https://github.com/LidiaMrad), and [Tracy L. Stepien](https://github.com/tstepien/), Dynamics of a linearly-perturbed May–Leonard competition model, Submitted to the *Journal of Nonlinear Science*, arXiv: [2210.04342](https://doi.org/10.48550/arXiv.2210.04342).
+>[Gabriela Jaramillo](https://github.com/gabyjaramillo), [Lidia Mrad](https://github.com/LidiaMrad), and [Tracy L. Stepien](https://github.com/tstepien/), Dynamics of a linearly-perturbed May–Leonard competition model, Submitted to the *Chaos: An Interdisciplinary Journal of Nonlinear Science*, arXiv: [2210.04342](https://doi.org/10.48550/arXiv.2210.04342).
 
 ## Description of Folders
 Code to create each figure in the paper is contained in the folder with the same name. There is a README file within each folder that provides further instructions on how to recreate the figures with the given code.
